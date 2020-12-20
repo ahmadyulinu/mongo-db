@@ -38,7 +38,7 @@ $res = $collection ->find();
   </nav>
 
   <div class="container mt-4">
-    <div class="listed-article mt-4">
+    <div class="listed-article mt-4 mb-2">
             <div class="text text-center">
               <h3>Daftar Artikel</h3>
             </div>
