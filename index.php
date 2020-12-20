@@ -24,14 +24,14 @@ $res = $collection ->find();
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow rounded" style="word-spacing: 3px;">
-  <a class="navbar-brand" href="#">My Adventure</a>
+  <a class="navbar-brand" href="#">the Technology</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="insert.php">Write an Article</a>
+        <a class="nav-link" href="insert.php">Add an Article</a>
       </li>
       </ul>  
   </div>
@@ -48,8 +48,8 @@ $res = $collection ->find();
               <div class="card-body">
                 <?php echo '<h4>', $result['judul_artikel'], '</h4>'; ?>
                 <?php echo '<a href="artikel.php?id=',$result['id_artikel'], '" class="text-secondary float-left mt-2" style="font-weight:400">Read article</a>'; ?>
-                <?php echo '<a href="delete.php?id=',$result['id_artikel'], '" class="text-secondary float-right m-2">Delete Article</a> '; ?>
-                <?php echo '<a href="edit.php?id=',$result['id_artikel'], '" class="text-secondary float-right m-2">Edit Article</a>'; ?>
+                <?php echo '<a href="delete.php?id=',$result['id_artikel'], '" class="text-danger float-right mt-2 ml-4">Delete Article</a> '; ?>
+                <?php echo '<a href="edit.php?id=',$result['id_artikel'], '" class="text-success float-right mt-2">Edit Article</a>'; ?>
               </div>
             </div>
         <?php } ?>
