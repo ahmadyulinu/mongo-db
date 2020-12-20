@@ -31,7 +31,7 @@
     <div class="container mt-4">
     <div class="col d-flex justify-content-center">
         <div class="row">
-            <div class="box mt-5 shadow">
+            <div class="box mt-5 shadow rounded">
             <?php if(!empty($res)) { ?>
                 <div class="text-container m-5">
                     <h4><?= $res['judul_artikel'];?></h4>
