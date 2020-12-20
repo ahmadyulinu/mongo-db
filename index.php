@@ -47,7 +47,9 @@ $res = $collection ->find();
             <div class="card m-4 shadow">
               <div class="card-body">
                 <?php echo '<h4>', $result['judul_artikel'], '</h4>'; ?>
-                <?php echo '<a href="artikel.php?id=',$result['id_artikel'], '" class="text-secondary">Read article</a>'; ?>
+                <?php echo '<a href="artikel.php?id=',$result['id_artikel'], '" class="text-secondary float-left mt-2" style="font-weight:400">Read article</a>'; ?>
+                <?php echo '<a href="delete.php?id=',$result['id_artikel'], '" class="text-secondary float-right m-2">Delete Article</a> '; ?>
+                <?php echo '<a href="edit.php?id=',$result['id_artikel'], '" class="text-secondary float-right m-2">Edit Article</a>'; ?>
               </div>
             </div>
         <?php } ?>
